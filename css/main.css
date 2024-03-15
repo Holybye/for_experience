@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
+
+/* Стили верхушки сайта */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #85b2c6;
+}
+
+a {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(225, 115, 18);
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    -webkit-transition: all 3s ease-out;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top:1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+header{
+    float: left;
+    background-color:rgb(17, 56, 88);
+    width: 99.4%;
+    padding: 0.3%;
+    color:white;
+    border-bottom:  5px solid #39748e;
+    font-family: "Oswald", sans-serif;
+}
+
+header>div#logo>a>img{
+    width: 50px;
+    height: 50px;
+    float:left;
+}
+
+header>div#logo>a{
+    color:white
+}
+
+header>div#logo>a>span{
+    font-size: 2.5em;
+    margin-left: 10px;
+    font-family: "Oswald", sans-serif;
+}
+
+header>div#logo>a>img{
+    margin-left: 15%;
+}
+
+/* Нужна адаптивность */
+#logo{
+    float: left;
+    width: 30%;
+}
+
+#about {
+    float: left;
+    width: 37%;
+}
+
+#reg_auth{
+    float: right;
+    width: 30%;
+}
+
+/* Upgrade */
+
+#about{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4em;
+    padding-top: 10px;
+}
+
+#about>a{
+    color:white;
+}
+
+#about>a:hover{
+    color: #dfdfdf;
+    border-bottom:1px solid silver;
+}
+
+#about>a:last-child{
+    margin-left: 10%;
+}
+
+#reg_auth>a{
+    color: white;
+}
+
+.btn:hover{
+    border-bottom: 2px solid rgb(72, 159, 217);
+    margin-top: 15px;
+}
+
+.btn{
+    float: right;
+    margin-right: 16%;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: rgb(4, 125, 218);
+    text-shadow: #5d666a 0 0 2px;
+    border-bottom: 4px solid rgb(72, 159, 217);
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+
+/* Меню сайта*/
+nav{
+    background-color: rgb(214, 246, 255);
+    width: 99.4%;
+    padding:7px 0.3%;
+    float: left;
+    border-bottom: 2px solid rgb(115, 177, 171);
+}
+
+nav a{
+    color: #323232;
+    font-size: 1.5em;
+    margin-left: 5%;
+}
+
+nav a:hover{
+    color: rgb(147, 135, 135);
+}
+
+nav a:last-child{
+    margin-right: 15px;
+}
+
+#search>img{
+    display: flex;
+    width: 15px;
+    height: auto;
+}
+
+#search{
+    float: right;
+    color: #7d7d7d;
+    cursor:pointer;
+    font-size: 1.4em;
+    margin-right: 10px;
+}
+
+/* Начало стилей для нижней части */
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content{
+    flex: 1 0 auto;
+}
+
+/* Нижняя часть сайта */
+footer{
+    float: left;
+    background-color: rgb(17, 56, 88);
+    width: 98%;
+    padding: 1%;
+    border-top: 5px solid #39748e;
+    font-family:  "Oswald", sans-serif;
+}
+
+#site_name{
+    margin-right: 5%;
+    color: white;
+    font-size:1.5em;
+    float:right
+}
+
+#footer_menu{
+    font-size: 1.2em;
+}
+
+#footer_menu>a{
+    margin-left: 2%;
+    color:white;
+}
+
+#footer_menu>a:hover, #rights>a:hover{
+    border-bottom: 1px solid silver;
+    color:#dfdfdf
+}
+
+#rights{
+    float:left;
+    margin-left: 5%;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+#rights>a{
+    color:white;
+}
+
+#social img{
+    width: 20px; /* Устанавливаем желаемую ширину */
+    height: auto; /* Автоматический расчет высоты, сохраняя пропорции */
+}
+
+#social {
+    display: inline-flex; /* Размещаем в одной строке */
+    float:right;
+    width: 30; /* Ширина будет автоматически рассчитана */
+    margin-right: 5%;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 10px; /* Отступ от нижнего края */
+    right: 10px;
+}
+
+#social>a{
+    border-radius: 50%;
+    background-color: rgb(71, 177, 230);
+    margin-left: 2%;
+    width: 30px;
+    height: 30px;
+    float:right;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+#social>a:hover{
+    background-color: aquamarine;
+}
